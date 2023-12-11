@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div class="col-md-12">
       <h2>App working!</h2>
@@ -9,6 +9,20 @@
     <app-unit-floor></app-unit-floor>
     <app-unit-status></app-unit-status>
     <app-unit-view></app-unit-view>
+
     
   </div>
+</div> -->
+
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-home *ngIf="loadedFeature === 'home'"></app-home>
+      <app-about *ngIf="loadedFeature === 'about'"></app-about>
+      <app-company *ngIf="loadedFeature !== 'company'"></app-company>
+      <app-city *ngIf="loadedFeature !== 'city'"></app-city>
+    </div>
+  </div>
 </div>
+

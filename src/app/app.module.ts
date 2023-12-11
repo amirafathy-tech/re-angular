@@ -11,6 +11,8 @@ import { UnitsComponent } from './units/units.component';
 import { UnitViewComponent } from './units/unit-view/unit-view.component';
 import { UnitStatusComponent } from './units/unit-status/unit-status.component';
 import { UnitFloorComponent } from './units/unit-floor/unit-floor.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { UnitFloorComponent } from './units/unit-floor/unit-floor.component';
     UnitsComponent,
     UnitViewComponent,
     UnitStatusComponent,
-    UnitFloorComponent
+    UnitFloorComponent,
+    HomeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
