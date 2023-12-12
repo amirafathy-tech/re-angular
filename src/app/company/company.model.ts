@@ -3,8 +3,6 @@ export class Company{
     public description:string;    
     constructor(code:string,desc:string){
         this.code=code;
-        this.description=desc;
-        
+        this.description=desc;  
     }
-    
 }
