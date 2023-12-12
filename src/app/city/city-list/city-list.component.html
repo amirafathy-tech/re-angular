@@ -1,0 +1,70 @@
+
+  <div class="row">
+    <div class="col-md-12">
+        <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Code</th>
+                <th>Description</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let city of cities">
+                <td><span>{{city.id}}</span></td>
+                <td><span>{{city.code}}</span></td>
+                <td><span>{{city.description}}</span></td>
+                <td>
+                  <button class="btn btn-sm btn-info" (click)="openDetails(contentDetails, friend)">
+                    <i class="fa fa-search"></i>Details</button>
+                  <button class="btn btn-sm btn-warning" (click)="openEdit(contentEdit, friend)">
+                    <i class="fa fa-edit"></i>Edit</button>
+                  <button class="btn btn-sm btn-danger" (click)="openDelete(contentDelete, friend)">
+                    <i class="fa fa-remove"></i>Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+      <!-- <app-city-item
+        *ngFor="let cityEl of cities; let i = index"
+        [city]="cityEl"
+        [index]="i"></app-city-item> -->
+    </div>
+  </div>
+
+
+  <!-- <div class="border">
+    <button class="btn btn-md btn-outline-primary">
+      <i class="fa fa-user"></i>New City</button>
+  </div>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Code</th>
+        <th>Description</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let city of cities">
+        <td><span>{{friend.id}}</span></td>
+        <td><span>{{friend.firstname}}</span></td>
+        <td><span>{{friend.lastname}}</span></td>
+        <td><span>{{friend.department}}</span></td>
+        <td><span>{{friend.email}}</span></td>
+        <td><span>{{friend.country}}</span></td>
+        <td>
+          <button class="btn btn-sm btn-info" (click)="openDetails(contentDetails, friend)">
+            <i class="fa fa-search"></i>Details</button>
+          <button class="btn btn-sm btn-warning" (click)="openEdit(contentEdit, friend)">
+            <i class="fa fa-edit"></i>Edit</button>
+          <button class="btn btn-sm btn-danger" (click)="openDelete(contentDelete, friend)">
+            <i class="fa fa-remove"></i>Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table> -->
+  
+  

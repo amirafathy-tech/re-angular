@@ -16,6 +16,8 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CityListComponent } from './city/city-list/city-list.component';
+import { CityItemComponent } from './city/city-list/city-item/city-item.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     UnitStatusComponent,
     UnitFloorComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    CityListComponent,
+    CityItemComponent
   ],
   imports: [
     BrowserModule,
